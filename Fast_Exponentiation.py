@@ -2,11 +2,20 @@
 
 def exp(a,e,N):
     accum = 1
+    i =0
+    j =0
+    
     while e:
+        f=1
+        i+=1
         while not (e%2):
             e /= 2
             a = ((a%N) * (a%N)) % N
-        print("a: " , a)
+            print("a: " , a)
+            f=0
+        if(f):
+            print("a: " , a)
+        
             
         e -= 1
         print("e: " , e)
